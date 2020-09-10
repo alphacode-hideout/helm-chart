@@ -10,3 +10,7 @@ For more information about installing and using Helm, see the
 ## Remarks
 
 This project is copied from https://github.com/helm/charts and customise as per company need.
+
+## LAMP CHART
+
+Add `imagePullSecrets` to support private docker registry
