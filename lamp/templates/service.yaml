@@ -8,11 +8,7 @@ metadata:
     heritage: {{ .Release.Service }}
     release: {{ .Release.Name }}
 spec:
-  {{- if .Values.ingress.enabled }}
   type: ClusterIP
-  {{- else }}
-  type: {{ .Values.service.type }}
-  {{- end }}
   ports:
   - port: {{ .Values.service.HTTPPort }}
     targetPort: 80
